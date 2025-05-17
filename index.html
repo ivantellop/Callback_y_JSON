@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📚 Biblioteca Local</h1>
+
+        <section>
+            <h2>Inventario</h2>
+            <button onclick="consultarLibros()">Consultar libros</button>
+            <ul id="lista-libros"></ul>
+        </section>
+
+        <section>
+            <h2>Agregar Libro</h2>
+            <input type="text" id="titulo" placeholder="Título">
+            <input type="text" id="autor" placeholder="Autor">
+            <input type="text" id="genero" placeholder="Género">
+            <button onclick="agregarLibroHTML()">Agregar</button>
+        </section>
+
+        <section>
+            <h2>Actualizar Disponibilidad</h2>
+            <input type="text" id="tituloActualizar" placeholder="Título del libro">
+            <select id="nuevoEstado">
+                <option value="true">Disponible</option>
+                <option value="false">Prestado</option>
+            </select>
+            <button onclick="actualizarDisponibilidadHTML()">Actualizar</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
